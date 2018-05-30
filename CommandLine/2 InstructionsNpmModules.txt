@@ -1,0 +1,2 @@
+npm i -g csvtojson
+csvtojson customer-data.csv > customer-data.json
