@@ -6,7 +6,7 @@ const csv=require('csvtojson')
 csv()
 .fromFile(fileS)
 .then((jsonObj)=>{
-fs.writeFile('customer-data.json',JSON.stringify(jsonObj), function (error) {
+fs.writeFile('customer-data.json',JSON.stringify(jsonObj,null,2), function (error) {
   if (error) return console.error(error)
   console.log('Writing is done.')
 })	 
